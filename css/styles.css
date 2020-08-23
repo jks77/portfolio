@@ -1,0 +1,143 @@
+:root {
+	--primary-cyan: #5fb4a2;
+	--primary-dark-blue: #203a4c;
+	--primary-grayish-dark-blue: #33323d;
+	--clr-background: #fafafa;
+	--clr-text-field: #eaeaeb;
+	--clr-error: #f43030;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--clr-background);
+}
+
+/* header */
+
+.header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.header-home {
+	position: fixed;
+	width: 100%;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5em;
+}
+
+.logo-link {
+	padding-left: .5em;
+}
+
+/* navigation */
+
+.nav {
+	position: fixed;
+	background: #203a4c;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 100%;
+	transform: translateX(0);
+	transition: transform 250ms;
+}
+
+.navigation-open {
+	transform: translateX(-100%);
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: color .2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--primary-cyan);
+}
+
+.active {
+	color: var(--primary-cyan);
+}
+
+/* for 'x'*/
+.close-nav {
+	border: 0;
+	background: 0;
+	color: #fff;
+	font-weight: 700;
+	font-size: 3rem;
+	cursor: pointer;
+	padding: .5em;
+	position: absolute;
+}
+
+/* hamburger */
+.open-nav {
+	border: 0;
+	background: 0;
+	cursor: pointer;
+	padding: .5em;
+	margin-left: auto;
+	font-size: 1.5em;
+}
+
+@media (min-width: 600px) {
+	.open-nav,
+	.close-nav {
+		display: none;
+	}
+
+	.nav {
+		position: initial;
+		background: var(--clr-background);
+		width: initial;
+	}
+
+	.nav-list {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.nav-item {
+		margin-left: 2em;
+	}
+
+	.nav-link {
+		font-size: 1rem;
+		color: var(--primary-dark-blue);
+	}
+}
