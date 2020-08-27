@@ -21,43 +21,66 @@ srcset > there are different size img in the folder. I used srcset to display th
 </head>
 <body>
   <header class="header">
-        <a class="logo-link" href="index.html">
-          <img src="images/logo.svg" alt="logo">
-        </a>
-        <button aria-label="Open navigation" class="open-nav"><img src="images/icons/hamburger.svg" alt=""></button>
+    <div class="container">
+      <a class="logo-link" href="index.html">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+      <button aria-label="Open navigation" class="open-nav"><img src="images/icons/hamburger.svg" alt=""></button>
 
-        <nav class="nav"> 
-            <button aria-label="Close navigation" class="close-nav"><img src="images/icons/close.svg" alt=""></button>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
-            </ul>
-        </nav> 
+      <nav class="nav"> 
+          <button aria-label="Close navigation" class="close-nav"><img src="images/icons/close.svg" alt=""></button>
+          <ul class="nav-list">
+              <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">Portfolio</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
+          </ul>
+      </nav> 
+    </div>
+        
 </header>
+<!-- header ends -->
+
 <main class="container">
 
   <section class="hero"> 
     <div class="img-container">
-      <img class="hero-img" srcset="images/homepage/mobile/image-homepage-hero-311w.jpg 311, images/homepage/mobile/image-homepage-hero-622w.jpg 622w"
-      sizes="(max-width: 375px) 375px, 622px" src="images/homepage/mobile/image-homepage-hero-622w.jpg" alt="picture of me en-profile">
+
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/homepage/mobile/image-homepage-hero-311w.jpg">
+        <source media="(max-width: 666px)" srcset="images/homepage/mobile/image-homepage-hero-622w.jpg 622w">
+        <source media="(max-width: 767px)" srcset="images/homepage/tablet/image-homepage-hero-688w.jpg 688w">
+        <source media="(max-width: 1025px)" srcset="images/homepage/tablet/image-homepage-hero-1376w.jpg 1376w">
+        <source media="(max-width: 2440px)" srcset="images/homepage/desktop/image-homepage-hero-1110w.jpg 1376w">
+        <img src="images/homepage/tablet/image-homepage-hero-1376w.jpg" alt="desktop screen connected to a closed laptop showing a website ">
+      </picture>
+
       <div class="hero-intro">
         <h2>Hey, I’m Alex Spencer and I love building beautiful websites</h2>
-        <a href="#about" class="btn btn-dark-blue"><span class="img-container">
+        <a href="#about" class="btn btn-dark-blue"><span class="btn-icon-container">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14"><g fill="none" fill-rule="evenodd" stroke=""><path d="M0 9l8 4 8-4"/><path opacity=".5" d="M0 5l8 4 8-4"/><path opacity=".25" d="M0 1l8 4 8-4"/></g></svg>
-        </span>About me</a>   
+        </span>About me</a>           
       </div>
-    </div>            
-    
-    <img srcset="images/homepage/mobile/image-homepage-profile-311w.jpg 311, images/homepage/mobile/image-homepage-profile-622w.jpg 622w"
-    sizes="(max-width: 375px) 375px, 622px" src="images/homepage/mobile/image-homepage-profile-622w.jpg" alt="picture of me en-profile">
+
+    </div>        
   </section>
   <!-- hero ends -->
 
   <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
-    <a href="" class="btn btn-white">Go to portfolio</a>
+    <div class="picture-container">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/homepage/mobile/image-homepage-profile-311w.jpg 311w">
+        <source media="(max-width: 767px)" srcset="images/homepage/mobile/image-homepage-profile-622w.jpg 622w">
+        <source media="(max-width: 1124px)" srcset="images/homepage/tablet/image-homepage-profile-281w.jpg 281w">
+        <source media="(max-width: 1900px)" srcset="images/homepage/tablet/image-homepage-profile-562w.jpg 562w">
+        <img src="images/homepage/mobile/image-homepage-profile-622w.jpg" alt="Chris standing up holding his daughter Elva">
+      </picture>
+    </div>
+    <div class="about-info">
+      <h2>About Me</h2>
+      <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
+      <a href="" class="btn btn-white">Go to portfolio</a>
+    </div>
+    
   </section>
   <!-- about ends -->
 
