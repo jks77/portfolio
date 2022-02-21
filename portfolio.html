@@ -5,50 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google fonts  -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
   
-  <title>Frontend Mentor | My Projects</title>
+  <title>Frontend Mentor | Minimalist Portfolio</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <a class="logo-link" href="index.html">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+      <button aria-label="Open navigation" class="open-nav"><img src="images/icons/hamburger.svg" alt=""></button>
 
-  Home
-  Portfolio
-  Contact Me
+      <nav class="nav"> 
+          <button aria-label="Close navigation" class="close-nav"><img src="images/icons/close.svg" alt=""></button>
+          <ul class="nav-list">
+              <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link active">Portfolio</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
+          </ul>
+      </nav> 
+    </div>
+        
+</header>
+<!-- header ends -->
 
-  Manage
+<main class="container portfolio-container">
 
-  This project required me to build a fully responsive landing page to the designs provided. 
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-  such as the testimonial slider.
+  <section class="portfolio info" id="manage">
 
-  View Project
+    <div class="img-container">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/portfolio/mobile/image-portfolio-manage.jpg">
+        <source media="(max-width: 767px)" srcset="images/portfolio/mobile/image-portfolio-manage@2x.jpg">
+        <source media="(max-width: 900px)" srcset="images/portfolio/tablet/image-portfolio-manage.jpg">
+        <source media="(max-width: 1119px)" srcset="images/portfolio/tablet/image-portfolio-manage@2x.jpg">
+        <source media="(max-width: 2400px)" srcset="images/portfolio/desktop/image-portfolio-manage.jpg">
+        <img src="images/portfolio/tablet/image-portfolio-manage@2x.jpg" alt="">
+      </picture>
+    </div>
+    
+    <div class="portfolio-content">
+      <div class="info-with-border">
+        <h2>Manage</h2>
+        <p>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+        <a href="" class="btn btn-white">View Project</a>
+      </div>      
+    </div>
+    
+  </section>
+   <!-- manage ends  -->
 
-  Bookmark
+  <section class="portfolio info" id="bookmark">
 
-  This project required me to build a fully responsive landing page to the designs provided. I 
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-  as the features section.
+    <div class="img-container">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/portfolio/mobile/image-portfolio-bookmark.jpg">
+        <source media="(max-width: 767px)" srcset="images/portfolio/mobile/image-portfolio-bookmark@2x.jpg">
+        <source media="(max-width: 900px)" srcset="images/portfolio/tablet/image-portfolio-bookmark.jpg">
+        <source media="(max-width: 1119px)" srcset="images/portfolio/tablet/image-portfolio-bookmark@2x.jpg">
+        <source media="(max-width: 2400px)" srcset="images/portfolio/desktop/image-portfolio-bookmark.jpg">
+        <img src="images/portfolio/tablet/image-portfolio-manage@2x.jpg" alt="">
+      </picture>
+    </div>
 
-  View Project
+    <div class="portfolio-content">
+      <div class="info-with-border">
+        <h2>Bookmark</h2>
+        <p>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
+        as the features section.</p>
+        <a href="" class="btn btn-white">View Project</a>
+      </div>
+  </div>
+    
+  </section>
 
-  Insure
+  <!-- bookmark ends -->
+  <section class="portfolio info" id="insure">
 
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-  landing page. The only JavaScript this project required was to enable the toggling of the 
-  mobile navigation.
+    <div class="img-container">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/portfolio/mobile/image-portfolio-insure.jpg">
+        <source media="(max-width: 767px)" srcset="images/portfolio/mobile/image-portfolio-insure@2x.jpg">
+        <source media="(max-width: 900px)" srcset="images/portfolio/tablet/image-portfolio-insure.jpg">
+        <source media="(max-width: 1119px)" srcset="images/portfolio/tablet/image-portfolio-insure@2x.jpg">
+        <source media="(max-width: 2400px)" srcset="images/portfolio/desktop/image-portfolio-insure.jpg">
+        <img src="images/portfolio/tablet/image-portfolio-manage@2x.jpg" alt="">
+      </picture>
+    </div>
+    
+    <div class="portfolio-content">
+      <div class="info-with-border">
+        <h2>Insure</h2>
+        <p>This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the 
+          mobile navigation..</p>
+        <a href="" class="btn btn-white">View Project</a>
+      </div>
+    </div>
+    
+    
+  </section>
+  <!-- insure ends -->
+  <section class="portfolio info" id="fylo">
 
-  View Project
+    <div class="img-container">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/portfolio/mobile/image-portfolio-fylo.jpg">
+        <source media="(max-width: 767px)" srcset="images/portfolio/mobile/image-portfolio-fylo@2x.jpg">
+        <source media="(max-width: 900px)" srcset="images/portfolio/tablet/image-portfolio-fylo.jpg">
+        <source media="(max-width: 1119px)" srcset="images/portfolio/tablet/image-portfolio-fylo@2x.jpg">
+        <source media="(max-width: 2400px)" srcset="images/portfolio/desktop/image-portfolio-fylo.jpg">
+        <img src="images/portfolio/tablet/image-portfolio-manage@2x.jpg" alt="">
+      </picture>
+    </div>
+    
+    <div class="portfolio-content">
+      <div class="info-with-border">
+        <h2>Fylo</h2>
+        <p>This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern 
+          CSS like Flexbox and Grid for layout purposes.</p>
+        <a href="" class="btn btn-white">View Project</a>
+      </div>
+    </div>    
+    
+  </section>
 
-  Fylo
+  <!-- fylo ends -->
 
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-  CSS like Flexbox and Grid for layout purposes.
+  <!-- portfolio ends -->
 
-  View Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
+  <section class="collaborate">
+      <h2>Interested in doing a project together?</h2>
+      <div class="btn-container">
+        <a href="" class="btn btn-white">Contact me</a>
+      </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <img src="images/logo.inverted.svg" alt="" class="logo">
+  <ul class="nav-links">
+    <li class="nav-item"><a href="index.html" class="nav-link nav-footer">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link nav-footer">Portfolio</a></li>
+    <li class="nav-item"><a href="" class="nav-link nav-footer">Contact me</a>
+    </li>
+  </ul>
+  <div class="social-links">
+    <a href="https://github.com/jks77" class="social-link github"><img src="images/icons/github-inverted.svg" alt=""></a>
+    <a href="#" class="social-link twitter"><img src="images/icons/twitter-inverted.svg" alt=""></a>
+    <a href="https://www.linkedin.com/in/jan-krijn-schinkel/" class="social-link linkedin"><img src="images/icons/linkedin-inverted.svg" alt=""></a>
+  </div>
+  </div>
+  
+</footer>
 </body>
+<script src="script.js"></script>
 </html>

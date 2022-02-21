@@ -131,6 +131,12 @@ p {
 	margin: 0 auto;
 }
 
+.info-with-border {
+	border-bottom: 1px solid #dcdcde;
+	border-top: 1px solid #dcdcde;
+	padding-bottom: 3em;
+}
+
 /* header */
 
 .header {
@@ -217,19 +223,16 @@ p {
 
 /* hero */
 
+.hero {
+	margin-bottom: 3em;
+}
 /* about */
 
-.about {
-	padding-top: 3em;
-}
-
-.about .img-container {
+.info .img-container {
 	padding-bottom: 2em;
 }
 
-.about-info {
-	border-bottom: 1px solid #dcdcde;
-	border-top: 1px solid #dcdcde;
+.about .info-with-border {
 	padding-bottom: 3em;
 }
 
@@ -292,6 +295,24 @@ footer .social-link {
 
 footer .social-link:last-of-type {
 	margin-right: 0;
+}
+
+/* portfolio */
+
+.portfolio .portfolio-content {
+	margin-bottom: 3em;
+}
+
+.portfolio .info-with-border {
+	padding-bottom: 1.5em;
+}
+
+#fylo .portfolio-content {
+	margin-bottom: 0;
+}
+
+.portfolio .info-with-border p {
+	padding-bottom: 2em;
 }
 
 @media (min-width: 768px) {
@@ -359,7 +380,7 @@ footer .social-link:last-of-type {
 		max-width: 281px;
 	}
 
-	.about-info {
+	.info-with-border {
 		padding-bottom: 0;
 	}
 
@@ -438,6 +459,35 @@ footer .social-link:last-of-type {
 	footer .social-links {
 		margin-top: 0;
 	}
+
+	.portfolio {
+		display: flex;
+		margin-bottom: 5em;
+	}
+
+	.portfolio > div {
+		width: 100%;
+	}
+
+	.portfolio .img-container {
+		padding-bottom: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.portfolio .info-with-border {
+		margin-left: 3em;
+	}
+
+	.portfolio:nth-of-type(even) > .portfolio-content {
+		order: -1;
+		margin-left: 0;
+		margin-right: 3em;
+	}
+
+	#fylo {
+		margin-bottom: 0em;
+	}
 }
 
 @media (min-width: 900px) {
@@ -450,7 +500,7 @@ footer .social-link:last-of-type {
 		padding-right: .6em;
 	}
 
-	.about-info {
+	.info-with-border {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -471,16 +521,12 @@ footer .social-link:last-of-type {
 		padding: 0;
 	}
 
-	/* .about .img-container {
-		border: 1px solid red;
-	} */
-
 	.about .img-container img {
 		max-width: initial;
 		width: 100%;
 	}
 
-	.about-info {
+	.info-with-border {
 		margin-right: 6em;
 		margin-left: 6em;
 	}
@@ -490,8 +536,31 @@ footer .social-link:last-of-type {
 	}
 }
 
+/* ZIE VOOR INFO-WITH-BORDER > ABOUT ME INDEX.HTML > IS HET ZELFDE */
 @media (min-width: 1120px) {
 	.about .img-container img {
 		width: 540px;
+	}
+
+	.portfolio-container {
+		padding: 0;
+	}
+
+	.portfolio .img-container {
+		width: initial;
+	}
+
+	.portfolio .img-container img {
+		width: 575px;
+	}
+
+	.portfolio .info-with-border {
+		width: 300px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.portfolio:nth-of-type(even) {
+		justify-content: flex-end;
 	}
 }
